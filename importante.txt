@@ -1,0 +1,8 @@
+esto es para instalar un servidor de pruebas
+npm install http-server -g
+
+
+entramos en la carpeta dist
+http-server -o
+
+y esto abre el navegador directamente

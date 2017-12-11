@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { InformacionService } from "./services/informacion.service";
+import { ProductosService } from "./services/productos.service"
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +10,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+    //solo con esta declaracion ya hacemos que se ejecute la funcion que se encuentra en
+    //import { InformacionService } from "./services/informacion.service", en todas las paginas del sitio estaran disponibles
+    constructor(public _is:InformacionService, public _ps:ProductosService){
+
+
+    }
+
 }
